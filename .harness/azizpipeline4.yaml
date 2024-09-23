@@ -1,0 +1,30 @@
+pipeline:
+  name: aziz-pipeline-4
+  identifier: azizpipeline4
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: stage X
+        identifier: stage_X
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "stage X runs"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
