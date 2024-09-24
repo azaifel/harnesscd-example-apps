@@ -23,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo "Trigger test after setting webhook on pipeline+++++"
+                        script: echo "Trigger test after setting webhook on pipeline------"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
