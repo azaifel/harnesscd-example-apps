@@ -28,3 +28,9 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: HARNESSREPOgitconnector
+        build: <+input>
+        sparseCheckout: []
