@@ -23,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo "stage X runs"
+                        script: echo "stage X runs and i am testing if pipeline will get triggered after this change here"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
