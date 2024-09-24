@@ -1,0 +1,14 @@
+inputSet:
+  name: harness-pipeline-inputSet
+  identifier: harnesspipelineinputSet
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: azizpipeline4
+    properties:
+      ci:
+        codebase:
+          build:
+            type: tag
+            spec:
+              tag: <+trigger.tag>
